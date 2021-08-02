@@ -14,8 +14,8 @@ export default function App() {
           Demo involves an example of what the React component does, and you can
           see the source code by clicking on the CodeSandbox link.
         </Intro>
-        {components.map((hook, index) => (
-          <Component key={hook.id} index={index + 1} {...hook} />
+        {components.map((component, index) => (
+          <Component key={component.id} index={index + 1} {...component} />
         ))}
       </Container>
     </>

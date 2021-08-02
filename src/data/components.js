@@ -36,6 +36,14 @@ const components = [
       "The Message Component accepts 3 props, onClose - a function that updates a boolean state to false, ms - a millisecond value that determines how long it takes to close the message, 1000ms is 1 second, and a bgColor prop that determines the background color of the message, useful to convey the type of the message. For example, the color red can be used to notify the user of an error, and green can be used to notify a successful action.",
   },
   {
+    name: "Carousel.js",
+    demo: "https://react-carousel-ui.netlify.app/",
+    github: "https://github.com/YutaMoriJP/Carousel-React",
+    id: uuidv4(),
+    explanation:
+      "A React component API that helps users to build a Carousel UI. The API is easy to use where the user needs to pass an array that contains an object as its element. The object literal should look like {src, id, alt}. Look at the demo to see it in action or jump to the Github repo to learn more about the implementation details.",
+  },
+  {
     name: "Accordion.js",
     demo: "https://react-accordion-component.netlify.app/",
     sandbox:

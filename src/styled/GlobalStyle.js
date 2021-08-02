@@ -13,5 +13,6 @@ export default createGlobalStyle`
   body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    background: #ced4da
   }
 `;

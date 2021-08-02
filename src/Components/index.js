@@ -11,7 +11,7 @@ import Article from "../styled/Wrapper";
 //styled
 import Wrapper from "./styled";
 
-const Components = ({ name, demo, index, explanation, sandbox }) => {
+const Components = ({ name, demo, index, explanation, sandbox, github }) => {
   const { open, onOpen, onClose } = useOpen(false);
   return (
     <Wrapper index={index <= 5 ? index : index % 5} open={open ? 1 : 0}>
@@ -24,8 +24,8 @@ const Components = ({ name, demo, index, explanation, sandbox }) => {
           <Link href={demo} target="_blank" rel="noreferrer">
             Demo
           </Link>
-          <Link href={sandbox} target="_blank" rel="noreferrer">
-            CodeSandbox
+          <Link href={sandbox || github} target="_blank" rel="noreferrer">
+            {sandbox ? "CodeSandbox" : "Github"}
           </Link>
         </LinkWrapper>
       </Article>
