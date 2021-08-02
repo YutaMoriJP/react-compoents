@@ -4,7 +4,7 @@ export default styled.article`
   background: #edf2ff;
   border-radius: 8px;
   box-shadow: 4px 4px 12px #868e96;
-  margin: auto;
+  margin: 5px auto;
   padding: 20px;
   max-width: 80%;
   width: 1200px;
