@@ -8,41 +8,30 @@ import { Modal } from "kantan-components";
 import { useEffect } from "react";
 import { Text, Row } from "kantan-style";
 
-const Message = () => {
+export default function App() {
   const { open, onOpen, onClose } = useOpen();
+
   useEffect(() => {
     onOpen();
   }, [onOpen]);
+
   return (
     <>
       {open ? (
         <Modal handleClose={onClose}>
-          <div style={{ background: "white", borderRadius: "10px" }}>
+          <div
+            style={{ background: "white", borderRadius: "10px", width: "100%" }}
+          >
             <Row justify="center" align="center">
-              <Text style={{ lineHeight: "25px" }}>
+              <Text>
                 Thanks for visting this page. The project is currently being
                 re-built as a library. The NPM page can be found{" "}
-                <a
-                  href="https://www.npmjs.com/package/kantan-components"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  here
-                </a>
-                .
+                <a href="npmjs.com/package/kantan-components">here</a>.
               </Text>
             </Row>
           </div>
         </Modal>
       ) : null}
-    </>
-  );
-};
-
-export default function App() {
-  return (
-    <>
-      <Message />
       <GlobalStyles />
       <Container>
         <Intro>

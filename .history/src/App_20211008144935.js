@@ -8,11 +8,13 @@ import { Modal } from "kantan-components";
 import { useEffect } from "react";
 import { Text, Row } from "kantan-style";
 
-const Message = () => {
+export default function App() {
   const { open, onOpen, onClose } = useOpen();
+
   useEffect(() => {
     onOpen();
   }, [onOpen]);
+
   return (
     <>
       {open ? (
@@ -35,14 +37,6 @@ const Message = () => {
           </div>
         </Modal>
       ) : null}
-    </>
-  );
-};
-
-export default function App() {
-  return (
-    <>
-      <Message />
       <GlobalStyles />
       <Container>
         <Intro>
