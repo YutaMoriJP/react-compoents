@@ -17,7 +17,7 @@ const Message = () => {
     <>
       {open ? (
         <Modal handleClose={onClose}>
-          <div style={{ background: "white", borderRadius: "10px" }}>
+          <div style={{ background: "white", borderRadius: "8px" }}>
             <Row justify="center" align="center">
               <Text style={{ lineHeight: "25px" }}>
                 Thanks for visting this page. The project is currently being
